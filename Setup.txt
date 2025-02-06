@@ -1,0 +1,26 @@
+emergency_landing_system/
+│── backend/                 
+│   ├── app.py               # Flask server  
+│   ├── websocket_server.py  # Streams real-time telemetry  
+│   ├── adsb_data.py         # Fetches live ADS-B flight data  
+│   ├── weather_data.py      # Fetches NOAA weather data  
+│   ├── terrain_analysis.py  # Extracts landing site features  
+│   ├── prediction_model.py  # ML-based site selection  
+│   ├── database.py          # Stores telemetry & processed data  
+│── frontend/               
+│   ├── dashboard.py         # Dash UI for real-time monitoring  
+│   ├── map_visualization.js # CesiumJS for 3D flight tracking  
+│   ├── static/              
+│   │   ├── index.html       # Web interface  
+│   │   ├── style.css        # UI styling  
+│   │   ├── script.js        # Handles UI interactions  
+│── models/                  # ML models & training scripts  
+│   ├── train_model.py       # Trains emergency landing predictor  
+│   ├── model.pkl            # Saved ML model  
+│── data/                    
+│   ├── terrain/             # USGS DEM terrain files  
+│   ├── adsb_flights.json    # Cached real-time flight data  
+│── simulation/              
+│   ├── flight_simulator.py  # Generates test flight telemetry  
+│── requirements.txt         # Dependencies  
+│── README.md                # Project documentation  
