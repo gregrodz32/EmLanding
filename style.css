@@ -1,0 +1,25 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* Button styles */
+button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
